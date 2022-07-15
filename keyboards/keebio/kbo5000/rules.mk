@@ -9,14 +9,20 @@ BOOTLOADER = atmel-dfu
 #
 BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = no        # Mouse keys
-EXTRAKEY_ENABLE = yes       # Audio control and System control
-CONSOLE_ENABLE = no        # Console for debug
+EXTRAKEY_ENABLE = no        # Audio control and System control
+CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
-NKRO_ENABLE = no            # Enable N-Key Rollover
-BACKLIGHT_ENABLE = yes      # Enable keyboard backlight functionality
+NKRO_ENABLE = yes            # Enable N-Key Rollover
+BACKLIGHT_ENABLE = no      # Enable keyboard backlight functionality
 AUDIO_ENABLE = no           # Audio output
-RGBLIGHT_ENABLE = yes       # Enable WS2812 RGB underlight.
+RGBLIGHT_ENABLE = no       # Enable WS2812 RGB underlight.
 LTO_ENABLE = yes
 SPLIT_KEYBOARD = yes
-
+COMBO_ENABLE = no
 DEFAULT_FOLDER = keebio/kbo5000/rev1
+
+# The following were added in an attempt to fix a crash
+SHARED_EP_ENABLE = yes
+KEYBOARD_SHARED_EP = yes
+MOUSE_SHARED_EP = no
+WAIT_FOR_USB = yes
