@@ -16,4 +16,17 @@
 
 #pragma once
 
+<<<<<<< Updated upstream:keyboards/toocanzs/optical/mcuconf.h
 #include_next "mcuconf.h"
+=======
+#include_next "mcuconf.h"
+
+#undef STM32_I2C_USE_I2C1
+#define STM32_I2C_USE_I2C1 TRUE
+
+#undef STM32_PWM_USE_TIM5
+#define STM32_PWM_USE_TIM5 TRUE
+
+#undef STM32_ADC_USE_ADC1
+#define STM32_ADC_USE_ADC1 TRUE
+>>>>>>> Stashed changes:keyboards/toocanzs/onekey/blackpill_f411/mcuconf.h
