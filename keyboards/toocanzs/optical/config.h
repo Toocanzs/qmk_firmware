@@ -28,6 +28,8 @@
 /* USB Device descriptor parameter */
 #define DEVICE_VER 0x0000
 
+#define DEBUG_MATRIX_SCAN_RATE
+
 /*
 #ifndef NO_DEBUG
 #define NO_DEBUG
@@ -51,4 +53,5 @@
 #define QMK_KEYS_PER_SCAN 4
 #define ONESHOT_TIMEOUT 1000
 
+#undef STM32_HSECLK
 #define STM32_HSECLK 8000000U

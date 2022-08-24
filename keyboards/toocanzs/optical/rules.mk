@@ -30,3 +30,5 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 BAKCLIGHT_SUPPORTED = no
 
 EXTRAFLAGS += -flto
+CUSTOM_MATRIX = yes
+SRC += matrix.c
