@@ -28,7 +28,7 @@
 /* USB Device descriptor parameter */
 #define DEVICE_VER 0x0000
 
-#define DEBUG_MATRIX_SCAN_RATE
+//#define DEBUG_MATRIX_SCAN_RATE
 
 /*
 #ifndef NO_DEBUG
@@ -45,8 +45,8 @@
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 12
 
-#undef MATRIX_ROW_PINS
-#undef MATRIX_COL_PINS
+//#undef MATRIX_ROW_PINS
+//#undef MATRIX_COL_PINS
 
 #define FORCE_NKRO
 #define USB_POLLING_INTERVAL_MS 1
@@ -55,3 +55,5 @@
 
 #undef STM32_HSECLK
 #define STM32_HSECLK 8000000U
+
+#define UNUSED_PINS {A3, A4, A5, A6, A7, A8, A9, A10, /*A11 and A12 are used by usb*/ A13, A14, A15, B12, B13, B14, B15}
