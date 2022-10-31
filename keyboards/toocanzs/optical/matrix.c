@@ -82,7 +82,6 @@ uint32_t BSRR_TEMPLATE = 0b111 << 16;
 // So I guess we'll just get the pointer ourselves? I don't understand this one
 // Now you have to do `*GPIOA_BSRR = 5;`
 volatile uint32_t * const GPIOA_BSRR = (volatile uint32_t * const) &(GPIOA->BSRR);
-//volatile uint32_t * const GPIOB_IDR  = (volatile uint32_t * const) &(GPIOB->IDR); // TODO: REMOVE
 
 uint8_t matrix_scan(void) {
     bool matrix_has_changed = false;

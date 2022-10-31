@@ -28,16 +28,12 @@
 /* USB Device descriptor parameter */
 #define DEVICE_VER 0x0000
 
-//#define DEBUG_MATRIX_SCAN_RATE
-
-/*
 #ifndef NO_DEBUG
 #define NO_DEBUG
 #endif // !NO_DEBUG
 #if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
 #define NO_PRINT
 #endif // !NO_PRINT
-*/
 
 #undef MATRIX_ROWS
 #undef MATRIX_COLS
